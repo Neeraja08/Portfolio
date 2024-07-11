@@ -1,0 +1,108 @@
+.row p {
+  font-weight: 700px;
+  color: black;
+}
+.card-body ul {
+  padding-left: 20px;
+}
+
+li {
+  padding-top: 5px;
+}
+
+.text {
+  color: rgba(255, 255, 255, 0.87);
+}
+
+.container * {
+  padding: 0;
+  margin: 0;
+}
+
+.vcard {
+  background-color: #1e293b;
+  border-radius: 10px;
+  display: grid;
+  grid-template-rows: 40px 1fr;
+  margin: 10px !important;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.vcard .header {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.vcard .header .title {
+  color: rgba(255, 255, 255, 0.87);
+  font-size: 16px;
+  padding: 2px 12px;
+}
+
+.vcard .header .copy {
+  position: absolute;
+  top: 61%;
+  right: 1px;
+  transform: translate(-50%, -50%);
+  color: rgb(100, 116, 139);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  z-index: 100;
+  pointer-events: none;
+}
+
+.vcard .header .copy:hover {
+  color: rgb(148, 163, 184);
+}
+
+.vcard .header::before {
+  content: "";
+  position: absolute;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border: 1px solid #64748b4d;
+  right: 1px;
+  bottom: 0;
+  background-color: #33415580;
+  width: 282px;
+  height: 33px;
+  z-index: 100;
+}
+
+.vcard .header::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: #7dd3fc;
+  bottom: 0;
+}
+
+.vcard .footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  padding-left: 10px;
+}
+
+.vcard .footer .code {
+  display: flex;
+  align-items: center;
+}
+
+.vcard .footer .code .icon {
+  color: rgb(244, 114, 182);
+  padding-top: 3px;
+}
+
+.vcard .footer .code .text {
+  padding-left: 3px;
+  color: rgba(255, 255, 255, 0.87);
+}

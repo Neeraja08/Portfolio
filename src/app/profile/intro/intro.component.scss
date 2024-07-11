@@ -1,0 +1,38 @@
+.bg-nav {
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+
+.introdp-red {
+  filter: hue-rotate(100deg);
+}
+.introdp-purple {
+  filter: hue-rotate(50deg);
+}
+.introdp-yellow {
+  filter: hue-rotate(150deg);
+}
+.introdp-green {
+  filter: hue-rotate(250deg);
+}
+.introdp-blue {
+  filter: hue-rotate(0deg);
+}
+.cc-profile-image {
+  &.bgl-red a:before {
+    border-color: rgba(255, 140, 76, 0.6);
+  }
+  &.bgl-yellow a:before {
+    border-color: rgba(251, 230, 96, 0.6);
+  }
+  &.bgl-blue a:before {
+    border-color: rgba(0, 123, 225, 0.6);
+  }
+  &.bgl-green a:before {
+    border-color: rgba(91, 251, 131, 0.6);
+  }
+  &.bgl-purple a:before {
+    border-color: rgba(232, 99, 255, 0.6);
+  }
+}

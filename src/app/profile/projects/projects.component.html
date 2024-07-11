@@ -1,0 +1,141 @@
+<div class="section" id="projects">
+  <div class="container cc-education mb-3">
+    <div class="h4 text-center mb-4 title">Projects</div>
+    <!-- <div class="card-deck justify-content-center">
+      <div
+        class="card-container d-flex flex-grow-1 mb-2"
+        *ngFor="let project of projects"
+      >
+        <button>
+          <div class="card pcard">
+            <div (click)="showDesc(project)">
+              <div class="card-body d-flex flex-column align-items-center">
+                <img
+                  [src]="project.imgUrl"
+                  class="img-fluid rounded-circle mb-3"
+                  alt="Image"
+                  width="50"
+                  height="50"
+                />
+                <a
+                  class="h5 card-title text-center mb-3"
+                  [href]="project.link"
+                  target="_blank"
+                  >{{ project.title }}</a
+                >
+                <div class="flex">
+                  <ng-container *ngFor="let obj of project.tech">
+                    <img
+                      [src]="obj.icon"
+                      class="img-fluid rounded-circle mb-3"
+                      alt="Image"
+                      width="30"
+                      height="30"
+                      [title]="obj.title"
+                    />
+                  </ng-container>
+                </div>
+              </div>
+            </div>
+          </div>
+        </button>
+      </div>
+    </div> -->
+    <div class="repo-cards-div-main">
+      <ng-container *ngFor="let project of projects">
+        <div class="pcard" (click)="showDesc(project)">
+          <div class="bordered">
+            <img
+              [src]="project.imgUrl"
+              class="repo-icon"
+              alt="Image"
+              width="50"
+              height="50"
+            />
+            <div class="repo-name-div">
+              <p class="repo-name">
+                {{ project.title }}
+              </p>
+            </div>
+            <div class="repo-details">
+              <div class="flex">
+                <ng-container *ngFor="let obj of project.tech">
+                  <img
+                    [src]="obj.icon"
+                    class="img-fluid rounded-circle mb-3"
+                    alt="Image"
+                    width="30"
+                    height="30"
+                    [title]="obj.title"
+                  />
+                </ng-container>
+              </div>
+            </div>
+          </div>
+          <div class="content">
+            <img
+              [src]="project.imgUrl"
+              class="repo-icon"
+              alt="Image"
+              width="50"
+              height="50"
+            />
+            <div class="repo-name-div">
+              <p class="repo-name">
+                {{ project.title }}
+              </p>
+            </div>
+            <div class="repo-details">
+              <div class="flex">
+                <ng-container *ngFor="let obj of project.tech">
+                  <img
+                    [src]="obj.icon"
+                    class="img-fluid rounded-circle mb-3"
+                    alt="Image"
+                    width="30"
+                    height="30"
+                    [title]="obj.title"
+                  />
+                </ng-container>
+              </div>
+            </div>
+          </div>
+          <span class="bottom-text" *ngIf="project.createdAt">{{
+            project.createdAt
+          }}</span>
+        </div>
+      </ng-container>
+    </div>
+  </div>
+  <div class="container bg-primary" style="width: 100%; height: 100%">
+    <div>{{ descData[0] }}</div>
+    <ul *ngIf="descData?.[1]">
+      <li *ngFor="let work of descData[1] | split">{{ work }}</li>
+    </ul>
+  </div>
+
+  <div class="container mb-3" *ngIf="descData?.desc?.length">
+    <div class="terminal_toolbar">
+      <div class="butt">
+        <button class="btn btn-red" (click)="showDesc(null)"></button>
+        <button class="btn btn-dis"></button>
+        <button class="btn btn-dis"></button>
+      </div>
+      <p class="user">Description: ~</p>
+    </div>
+    <div class="terminal_body">
+      <div class="terminal_promt">
+        <span class="terminal_user">{{ descData.title }}</span>
+        <span class="terminal_location">~</span>
+        <span class="terminal_bling"
+          >$ {{ descData?.desc?.[0] }}
+          <ul *ngIf="descData?.desc?.[1]">
+            <li *ngFor="let work of descData?.desc?.[1] | split;let last=last">
+              {{ work }}
+            </li>
+          </ul></span
+        >
+      </div>
+    </div>
+  </div>
+</div>

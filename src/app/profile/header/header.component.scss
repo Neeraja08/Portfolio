@@ -1,0 +1,16 @@
+.bg-nav {
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+
+@media screen and (max-width: 991px) {
+  .bg-nav {
+    background: transparent !important;
+    border: unset !important;
+    backdrop-filter: unset !important;
+  }
+}
+.ico {
+  width: 30px;
+}
