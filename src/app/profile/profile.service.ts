@@ -168,26 +168,16 @@ Completed my Secondary school with 77%.`,
      . Utilized RxJS for efficient state management and asynchronous data handling.
      . Conducted code reviews and provided constructive feedback to improve code quality and maintainability.
      . Implemented unit and end-to-end tests to ensure application stability and reliability.`,
-
-      proj3name: ' 3. Project Name: Ticketing Tool',
-      des3: '(Providing support in developing a comprehensive ticketing tool using Angular, enabling efficient management of customer support requests. It provide features for creating, assigning, and tracking support tickets with multi-role authorization and multiorganization switching with multi variety of authentications including AAD and SSO.)',
-      proj3: `Data Integration and Management: Skilled in integrating Angular applications with backend APIs to manage ticketing data efficiently, ensuring seamless operations and user interactions.`,
-      proj4name: ' 4. Project Name: Launchpad',
-      des4: '(Launchpad often refers to a starting point or a centralized interface where users can initiate and access various applications, tools, or services within an organization or a platform. It serves as a gateway that aggregates different functionalities and provides users with a unified experience.)',
-      proj4: `Component-Based UI Development: Expertise in building responsive and reusable UI components using Angular’s component architecture for dynamic dashboard interfaces.
-
-      . Data Integration and Management: Proficient in integrating Angular applications with backend APIs to fetch and manage data, ensuring seamless data flow and synchronization.
-     
-     . Routing, State Management, and Testing: Experienced in implementing routing, managing application state using Angular services, and conducting comprehensive testing to ensure robust functionality and user experience.`,
     },
 
     {
       id: 1,
-      company: 'Genex Corp, Summer Intern ',
+      company: 'Genex Corp',
       location: 'Hyderabad',
       timeline: 'Feb 2021 – May 2021',
-      role: ' creation of visually stunning and user-friendly portfolios.',
-      work: `Technologies : Html , Css, Bootstrap.`,
+      role: 'Summer Intern',
+      work: `Creating visually stunning and user-friendly portfolios.
+      . Technologies : Html , Css, Bootstrap.`,
     },
   ];
 
